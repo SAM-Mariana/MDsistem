@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans';
+}
+body{
+    background-color: beige;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 15px;
+}
+/*---POSICION-DE-LA-BARRA-DE-NAVEGACION-----------*/
+.container{
+    background-color: transparent;
+    width: 50;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+/*---DONDE-SE-ENCUENTRAN-LOS-BOTONES-----------*/
+nav{
+    
+    background: #ffff01c8;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 20px 15px -20px #ffffff;
+}
+/*---BOTONES-EL-TAMAÑO-COLOR-DE-LETRA----------*/
+nav ul li{
+    list-style: none;
+    display: inline-grid;
+    padding: 10px 25px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 200px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s;
+}
+/*---SOMBRE-INTERIOR-----------*/
+nav ul li::after{
+    content: '';
+    background: #000000a3;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+}
+/*---COLOR-LETRAS-AL-ESTAR-SOBRE-ELLAS-------------*/
+nav ul li:hover{
+    color: #ffffff;
+}
+/*---DONDE-SE-SITUA-LA-SOMBRA*/
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+.letras{
+
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 30px;
+    font-weight: 250px;
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
+    color: rgb(68, 128, 30); 
+}
+
+

@@ -1,0 +1,28 @@
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.board div {
+    border: 1px solid black;
+}
+
+.ship {
+    background-color: gray;
+}
+
+.hit {
+    background-color: red;
+}
+
+.miss {
+    background-color: blue;
+}
+
+.button {
+    margin-top: 10px;
+}
